@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Iris Meal Tracker</title>
+    <!-- Menambahkan icon jika ditambahkan ke Homescreen HP -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#fbbf24">
+    
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden; /* Mencegah scroll ganda */
+            background-color: #f8fafc; /* Warna background Tailwind slate-50 menyesuaikan tema aplikasi */
+        }
+        
+        /* Trik menyembunyikan banner peringatan Google Apps Script */
+        .app-container {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        iframe {
+            width: 100%;
+            /* Menambah tinggi 30px untuk mengkompensasi bagian atas yang dipotong */
+            height: calc(100% + 30px); 
+            border: none;
+            /* Menggeser iframe ke atas sebanyak 30px untuk menyembunyikan banner */
+            margin-top: -30px; 
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="app-container">
+        <!-- 
+        ======================================================================
+        GANTI TEKS DI BAWAH INI DENGAN URL GOOGLE APPS SCRIPT ANDA 
+        Pastikan URL berakhiran /exec
+        ======================================================================
+        -->
+        <iframe src="https://script.google.com/macros/s/AKfycbwZc9atHJgrPACYCu_rOCT9JX5asHkPrmDUP1kQ7Y8FUMY35zAa6juOPKwxxAIv20kbYg/exec" allowfullscreen></iframe>
+    </div>
+</body>
+</html>
